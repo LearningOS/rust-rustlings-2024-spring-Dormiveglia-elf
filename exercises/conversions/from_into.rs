@@ -44,6 +44,9 @@ impl Default for Person {
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {
+        if s.is_empty() {return Person::default};
+
+        let parts: Vec
     }
 }
 
